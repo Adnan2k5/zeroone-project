@@ -91,23 +91,7 @@ body {
 .navbar a:hover {
   color: aqua;
 }
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 25%;
-}
-.fa:hover {
-  opacity: 0.7;
-}
-.fa-facebook {
-  color: white;
-}
-.fa-twitter {
-  color: white;
-}
+
 
 .social {
   height: fit-content;
@@ -128,6 +112,23 @@ body {
 }
 
 .fa-telegram {
+  color: white;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  color: white;
+}
+.fa-twitter {
   color: white;
 }
 
