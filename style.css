@@ -5,6 +5,9 @@
   position: fixed;
   right: 0;
   top: 0;
+  border-bottom: 1px solid white;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   /* background-image: linear-gradient(to right, #5de0e6, #3533cd); */
 }
 
@@ -29,7 +32,7 @@
 .navbar .head {
   width: 40%;
   margin-left: 110px;
-  font-size: larger;
+  font-size: 22px;
 }
 
 body {
@@ -89,28 +92,15 @@ body {
 }
 
 .navbar a:hover {
-  color: aqua;
+  color: violet;
 }
 .fa {
   padding: 20px;
-  font-size: 30px;
+  font-size: 30x;
   width: 30px;
   text-align: center;
   text-decoration: none;
   border-radius: 25%;
-}
-.fa:hover {
-  opacity: 0.7;
-}
-.fa-facebook {
-  color: white;
-}
-.fa-twitter {
-  color: white;
-}
-
-.fa-github {
-  color: white;
 }
 
 .social {
@@ -134,6 +124,19 @@ body {
 .fa-telegram {
   color: white;
 }
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  color: white;
+}
+.fa-twitter {
+  color: white;
+}
+
+.fa-github {
+  color: white;
+}
 
 .container2 {
   display: flex;
@@ -148,7 +151,7 @@ body {
 }
 .about-zero {
   margin-left: 15%;
-  margin-top: 25%;
+  margin-top: 20%;
   justify-content: start;
   color: white;
   display: flex;
@@ -156,19 +159,22 @@ body {
   align-items: stretch;
   width: 500px;
   text-align: left;
+  height: fit-content;
 }
 
 .about-zero > p {
   width: 100%;
+  display: flex;
+  font-size: 22px;
 }
 
 body {
   background-image: url(./assests/original.jpg);
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
+  margin-bottom: 15%;
 }
 
 .view {
@@ -186,9 +192,53 @@ body {
 
 .view:hover {
   color: white;
-  background-color: black;
 }
 
 .title > p {
   display: block;
+}
+
+.disc {
+  margin-top: 15%;
+  color: white;
+  display: inline-flex;
+  margin-left: 15%;
+  font-family: "kanit", sans-serif;
+  gap: 20%;
+  align-items: center;
+}
+
+.disc p {
+  width: 60%;
+  font-size: 22px;
+  text-align: left;
+}
+
+.disc h1 {
+  font-size: 50px;
+  width: 200px;
+}
+
+.discp {
+  margin-top: 4%;
+}
+
+.c-dics {
+  margin-top: 15%;
+  color: white;
+  display: inline-flex;
+  margin-left: 15%;
+  font-family: "kanit", sans-serif;
+  gap: 20%;
+  align-items: center;
+}
+
+.c-dics p {
+  width: 60%;
+  font-size: 22px;
+  text-align: left;
+}
+.c-dics h1 {
+  font-size: 50px;
+  width: 200px;
 }
