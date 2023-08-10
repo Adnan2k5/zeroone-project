@@ -1,0 +1,192 @@
+.navbar {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  
+  .navbar .head {
+    color: white;
+  }
+  
+  .navbar ul {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: right;
+    align-items: center;
+    margin-right: 80px;
+    list-style: none;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+  }
+  .navbar .head {
+    width: 40%;
+    margin-left: 110px;
+    font-size: larger;
+  }
+  
+  body {
+    background-color: #030307;
+  }
+  .container title {
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .container1 {
+    color: violet;
+    margin-top: 20%;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    gap: 500px;
+    font-family: "Kanit", sans-serif;
+  }
+  
+  .container1 {
+    text-align: start;
+    width: 300px;
+    font-size: larger;
+  }
+  .title h1:hover {
+    color: cyan;
+  }
+  
+  @keyframes onhover {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  
+  .title2 {
+    animation-timing-function: ease-in;
+    animation-name: onhover;
+    animation-duration: 8s;
+  }
+  
+  .title1 {
+    animation-name: onhover;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    text-align: center;
+    animation-duration: 6s;
+  }
+  
+  .navbar a:hover {
+    color: aqua;
+  }
+ 
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  color: white;
+}
+.fa-twitter {
+  color: white;
+}
+
+.fa-github {
+  color: white;
+}
+
+.social {
+  height: fit-content;
+  margin-top: 25%;
+  bottom: 0;
+  z-index: 60;
+  left: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: fit-content;
+}
+
+.fa-instagram {
+  color: white;
+}
+
+.fa-telegram {
+  color: white;
+}
+
+.container2 {
+  display: flex;
+}
+
+.container1 {
+  color: violet;
+  font-size: 20px;
+  font-family: "Kanit", sans-serif;
+  animation-name: onhover;
+  animation-duration: 4s;
+}
+.container1 {
+  margin-left: 15%;
+  margin-top: 25%;
+  justify-content: start;
+  color: violet;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 500px;
+  text-align: left;
+}
+.container1 > p {
+    width: 100%;
+  }
+  body {
+    background-image: url(./original.jpg);
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  
+  .view {
+    margin-left: 15%;
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    color: violet;
+    font-size: 20px;
+    padding: 10px;
+    font-family: "kanit";
+    text-decoration: none;
+    border-radius: 10%;
+  }
+  
+  .view:hover {
+    color: white;
+    background-color: black;
+  }
+  
+  .title > p {
+    display: block;
+  }
+  
