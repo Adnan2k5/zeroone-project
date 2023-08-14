@@ -2,6 +2,7 @@
   display: flex;
   gap: 10px;
   width: 100%;
+  height: 75px;
   position: fixed;
   right: 0;
   top: 0;
@@ -13,16 +14,23 @@
 
 .navbar .head {
   color: white;
+  align-items: center;
+  display: flex;
+}
+.navbar img {
+  border-radius: 50%;
+  margin-left: 50px;
 }
 
 .navbar ul {
-  width: 100%;
+  width: 100vw;
   display: flex;
-  gap: 50px;
   justify-content: right;
   align-items: center;
-  margin-right: 80px;
+  gap: 25px;
+  margin-right: 50px;
   list-style: none;
+  font-size: 22px;
 }
 .navbar a {
   text-decoration: none;
@@ -30,11 +38,13 @@
   padding: 5px;
 }
 .navbar .head {
-  width: 40%;
-  margin-left: 110px;
-  font-size: 22px;
+  width: 100vw;
+  margin-left: 20px;
+  font-size: 32px;
 }
-
+.navbar a:active {
+  color: aquamarine;
+}
 body {
   background-color: #030307;
 }
@@ -90,6 +100,11 @@ body {
   text-align: center;
   animation-duration: 6s;
 }
+.title3 {
+  animation-name: onhover;
+  animation-duration: 9s;
+  animation-timing-function: ease-in;
+}
 
 .navbar a:hover {
   color: violet;
@@ -106,6 +121,7 @@ body {
 .social {
   height: fit-content;
   margin-top: 25%;
+  font-size: 20px;
   bottom: 0;
   z-index: 60;
   left: 0;
@@ -113,7 +129,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
   width: fit-content;
 }
 
@@ -165,7 +180,7 @@ body {
 .about-zero > p {
   width: 100%;
   display: flex;
-  font-size: 22px;
+  font-size: 28px;
 }
 
 body {
@@ -184,8 +199,8 @@ body {
   width: fit-content;
   color: violet;
   font-size: 20px;
-  padding: 10px;
   font-family: "kanit";
+  text-align: start;
   text-decoration: none;
   border-radius: 10%;
 }
@@ -205,7 +220,7 @@ body {
   margin-left: 15%;
   font-family: "kanit", sans-serif;
   gap: 20%;
-  align-items: center;
+  align-items: start;
 }
 
 .disc p {
@@ -215,7 +230,7 @@ body {
 }
 
 .disc h1 {
-  font-size: 50px;
+  font-size: 72px;
   width: 200px;
 }
 
@@ -227,10 +242,11 @@ body {
   margin-top: 15%;
   color: white;
   display: inline-flex;
+  align-items: center;
   margin-left: 15%;
   font-family: "kanit", sans-serif;
   gap: 20%;
-  align-items: center;
+  /* text-align: start; */
 }
 
 .c-dics p {
@@ -239,6 +255,276 @@ body {
   text-align: left;
 }
 .c-dics h1 {
-  font-size: 50px;
+  font-size: 72px;
   width: 200px;
+}
+
+.glimses {
+  display: flex;
+  justify-content: center;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 300px 300px;
+  align-items: center;
+  margin-top: 10%;
+  gap: 50px;
+}
+
+.glim-head {
+  color: white;
+  margin-left: 15%;
+  margin-top: 20%;
+  font-size: 72px;
+  font-family: "kanit", sans-serif;
+}
+
+.contact {
+  margin-left: 15%;
+  margin-top: 20%;
+  color: white;
+}
+
+.get {
+  font-size: 60px;
+  border-bottom: 2px solid violet;
+  width: fit-content;
+}
+
+.call {
+  display: flex;
+  gap: 10%;
+}
+
+.mail a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
+.mail h3 {
+  font-size: 25px;
+}
+
+.meet h3 {
+  font-size: 25px;
+}
+
+footer {
+  text-align: end;
+  color: white;
+  margin-top: 25%;
+  margin-right: 15%;
+}
+.navbar .icon {
+  display: none;
+  color: white;
+}
+
+@media screen and (max-width: 450px) {
+  * {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .navbar {
+    align-items: center;
+  }
+  .navbar img {
+    display: none;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar .icon {
+    display: block;
+    background-color: white;
+  }
+  .navbar .head {
+    margin-left: 20px;
+    width: fit-content;
+    font-size: 25px;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    gap: 50px;
+    margin-top: 25%;
+    font-size: 18px;
+  }
+  .about-zero {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    font-size: medium;
+  }
+  .about-head {
+    font-size: 40px;
+  }
+  .about-par {
+    font-size: 5px;
+  }
+  .social {
+    margin: 0;
+    font-size: 15px;
+  }
+  .fa {
+    padding: 15px;
+  }
+
+  .disc {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .disc h1 {
+    font-size: 30px;
+  }
+  .disc p {
+    font-size: 20px;
+    width: 80vw;
+  }
+
+  .c-dics {
+    width: 100vw;
+    flex-direction: column;
+    display: flex;
+  }
+  .c-dics h1 {
+    width: 100vw;
+    font-size: 30px;
+  }
+  .c-dics p {
+    margin-top: 4%;
+    width: 80vw;
+    font-size: 20px;
+    margin-right: 20%;
+  }
+  .glim-head {
+    font-size: 30px;
+  }
+  .glimses img {
+    width: 90vw;
+    height: auto;
+  }
+  .get {
+    font-size: 30px;
+  }
+  .call {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+  }
+  footer {
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 850px) {
+  * {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .navbar {
+    justify-content: center;
+  }
+  .navbar img {
+    display: none;
+  }
+
+  .navbar .head {
+    margin: 0;
+    width: 50vw;
+    margin-left: 50px;
+    font-size: 20px;
+  }
+
+  .navbar ul {
+    margin: 0;
+    width: 100vw;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    display: flex;
+    width: 100vw;
+    gap: 50px;
+    margin-top: 25%;
+    font-size: 35px;
+  }
+  .about-zero {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100vw;
+  }
+  .about-head {
+    font-size: 72px;
+  }
+  .view {
+    margin-top: 10px;
+    font-size: 30px;
+  }
+
+  .social {
+    margin: 0;
+    font-size: 30px;
+  }
+  .fa {
+    padding: 15px;
+  }
+
+  .disc {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .disc h1 {
+    font-size: 72px;
+  }
+  .disc p {
+    font-size: 30px;
+    width: 80vw;
+  }
+
+  .c-dics {
+    width: 100vw;
+    flex-direction: column;
+    display: flex;
+  }
+  .c-dics h1 {
+    width: 100vw;
+    font-size: 72px;
+  }
+  .c-dics p {
+    margin-top: 4%;
+    width: 80vw;
+    font-size: 30px;
+    margin-right: 20%;
+  }
+  .glim-head {
+    font-size: 72px;
+  }
+  .glimses img {
+    width: 80vw;
+    height: auto;
+  }
+  .get {
+    font-size: 72px;
+  }
+  .call {
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  footer {
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
 }
